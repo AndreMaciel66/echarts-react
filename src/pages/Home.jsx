@@ -7,7 +7,7 @@ import { Container, Grid, Typography } from "@material-ui/core";
 class Home extends Component {
   render() {
     return (
-      <Container maxWidth="md">
+      <Container maxWidth="xl">
         <Grid
           container
           direction="column"
