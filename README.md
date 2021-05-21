@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Echarts Playground
+
+This repo have an example on how to use echarts + react, just a playground to see what's possible.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Run via Docker
+
+You can build an image docker to run this application, here's the following script to build and run.
+
+```sh
+docker build -t echarts:dev . \
+&& docker run \
+    -it \
+    --rm \
+    -v ${PWD}:/app \
+    -v /app/node_modules \
+    -p 3001:3000 \
+    -e CHOKIDAR_USEPOLLING=true \
+    echarts:dev
+```
 
 ## Available Scripts
 
